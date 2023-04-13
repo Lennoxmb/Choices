@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Magic 8 ball</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/magicStylesheet.css">
+    <link rel="shortcut icon" href="images/8-Ball-1945871012">
+
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="container">
+            <div class="row justify-center questionBox">
+                <input id="myInput" type="text" style="width:250px;" placeholder="Ask your Question">
+                <button id="submitQuestion">Ask Question</button>
+            </div>
+            <div class="row justify-center" id="imageContainer">
+                    <div class="resultRow" id="result"></div>
+                <img id="myImage" class="magicBall" src="images/8-Ball-1945871012">
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/magic.js"></script>
+</body>
+</html>

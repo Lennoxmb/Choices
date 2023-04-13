@@ -1,0 +1,63 @@
+
+.questionBox {
+    margin: 35px 0;
+}
+
+
+.resultRow {
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:25vh;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#result {
+    opacity: 0;
+    max-width: 200px;
+    text-align: center;
+    transition: opacity 1s ease-in-out;
+    font-size: 25px;
+}
+#result.show {
+    opacity: 1;
+}
+
+
+#imageContainer{
+    z-index: -1;
+    margin-top: 75px;
+    position: relative;
+}
+
+.magicBall {
+    max-width: 525px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.shake {
+    animation: shake 0.5s ease-in-out 1;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(10px);
+    }
+}
