@@ -17,6 +17,14 @@ function shakeImage() {
 }
 
 
+function userQUestion() {
+    let question = prompt("enter your question:", "");
+    while(question === "" || isNaN(question)){
+        question = prompt("enter your question:", "");
+    }
+}
+
+
 askQuestion.addEventListener('click', function(){
     const resultParent = document.getElementById("result");
     resultParent.style.visibility = "hidden";
@@ -56,3 +64,5 @@ askQuestion.addEventListener('click', function(){
         resultParent.classList.add("show");
     }, 800)
 });
+
+
